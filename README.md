@@ -4,7 +4,7 @@ This repository contains the high-fidelity Low Earth Orbit (LEO) satellite track
 
 ## Dataset Location
 The dataset file is located in this repository at:
-*   **[`realworld/hypatia/leo_sats_ancona_dataset.csv`](file:///home/rriggio/sumo/build/ns-3-workspace/V2X-Lyapunov/realworld/hypatia/leo_sats_ancona_dataset.csv)**
+*   **[`realworld/leo_orbit/leo_sats_ancona_dataset.csv`](file:///home/rriggio/sumo/build/ns-3-workspace/V2X-Lyapunov/realworld/leo_orbit/leo_sats_ancona_dataset.csv)**
 
 ## Dataset Overview
 The dataset (`leo_sats_ancona_dataset.csv`) contains simulated orbital mechanics, coordinates, Doppler shifts, and round-trip times (RTT) for LEO satellite passes. The data covers a continuous **1-hour ($3600\text{ s}$)** scenario at a **$1\text{ s}$ resolution**, mapped over the urban road network of Ancona, Italy (spatial bounding box of $1737\text{ m} \times 1039\text{ m}$).
@@ -36,7 +36,7 @@ The CSV file contains the following columns:
 You can load and parse the dataset using `pandas`:
 ```python
 import pandas as pd
-df = pd.read_csv('realworld/hypatia/leo_sats_ancona_dataset.csv')
+df = pd.read_csv('realworld/leo_orbit/leo_sats_ancona_dataset.csv')
 print(df.head())
 ```
 
